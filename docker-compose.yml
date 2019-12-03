@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  lecture20:
+    image: nginx:1.13.0-alpine
+    container_name: lecture20
+    ports:
+      - "8080:80"
+    volumes:
+      - ./lecture20:/var/www/html/website
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+docker_proxy:
+    image: nginx
+    container_name: docker_proxy
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+

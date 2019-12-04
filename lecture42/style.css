@@ -1,5 +1,14 @@
-h2 {
-    color: red;
+body {
+
+}
+
+
+h2 :hover {
+    color: rgb(145, 177, 86);
+    text-align: center;
+    line-height: 20px;
+    border: 5px solid purple;
+    cursor: pointer;
 }
 
 p {
@@ -7,5 +16,43 @@ p {
 }
 
 p {
-    color: green;
+    color: rgb(18, 20, 134);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background-color: rgb(0, 0, 255, 0.2);
+}
+
+* {
+    text-align: center;
+}
+
+p {
+    line-height: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: 'Sarabun', sans-serif;
+}
+
+img {
+    float: right;
+}
+
+footer {
+    clear: both;
+    text-align: center;
 }
